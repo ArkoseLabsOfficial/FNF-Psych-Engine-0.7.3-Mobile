@@ -3,7 +3,7 @@
     {
       "name": "lime",
       "type": "haxelib",
-      "version": null
+      "version": "8.0.2"
     },
     {
       "name": "openfl",
@@ -13,40 +13,27 @@
     {
       "name": "flixel",
       "type": "haxelib",
-      "version": null
+      "version": "5.5.0"
     },
     {
       "name": "flixel-addons",
       "type": "haxelib",
-      "version": null
-    },
-    {
-      "name": "flixel-tools",
-      "type": "haxelib",
-      "version": null
+      "version": "3.0.2"
     },
     {
       "name": "flixel-ui",
       "type": "haxelib",
-      "version": null
+      "version": "2.5.0"
     },
     {
       "name": "hxcpp",
-      "type": "haxelib",
-      "version": null
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/HaxeFoundation/hxcpp"
     },
     {
       "name": "hxCodec",
-      "type": "haxelib",
-      "version": null
-    },
-    {
-      "name": "SScript",
-      "type": "haxelib",
-      "version": null
-    },
-    {
-      "name": "hxcpp-debug-server",
       "type": "haxelib",
       "version": null
     },
@@ -56,18 +43,18 @@
       "version": null
     },
     {
-      "name": "hxdiscord_rpc",
-      "type": "git",
-      "dir": null,
-      "ref": "main",
-      "url": "https://github.com/MAJigsaw77/hxdiscord_rpc"
-    },
-    {
       "name": "flxanimate",
       "type": "git",
       "dir": null,
-      "ref": "dev",
-      "url": "https://github.com/ShadowMario/flxanimate"
+      "ref": "main-mobile",
+      "url": "https://github.com/MaysLastPlays-Stuff/flxanimate"
+    },
+    {
+      "name": "SScript",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/vilgaxhax/SScript"
     },
     {
       "name": "linc_luajit",
@@ -75,6 +62,13 @@
       "dir": null,
       "ref": "master",
       "url": "https://github.com/superpowers04/linc_luajit"
+    },
+    {
+      "name": "extension-androidtools",
+      "type": "git",
+      "dir": null,
+      "ref": "main",
+      "url": "https://github.com/MAJigsaw77/extension-androidtools"
     }
   ]
 }
