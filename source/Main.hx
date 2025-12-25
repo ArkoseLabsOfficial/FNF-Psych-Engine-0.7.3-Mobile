@@ -62,14 +62,14 @@ class Main extends Sprite
 		super();
 
 		#if mobile
-		MobileUtil.getPermissions();
+		/*MobileUtil.getPermissions();
 		Sys.setCwd(haxe.io.Path.addTrailingSlash(MobileUtil.getDirectory()));
 
 		if (!MobileUtil.areAssetsCopied("assets/"))
 			MobileUtil.copyAssetsFromAPK("assets/");
 
 		if (!MobileUtil.areAssetsCopied("assets/videos/"))
-			MobileUtil.copyAssetsFromAPK("assets/videos/");
+			MobileUtil.copyAssetsFromAPK("assets/videos/");*/
 		#end
 
 		if (stage != null)
