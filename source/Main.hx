@@ -18,10 +18,6 @@ import states.TitleState;
 import lime.graphics.Image;
 #end
 
-#if mobile
-import mobile.util.StorageSystem;
-#end
-
 //crash handler stuff
 #if CRASH_HANDLER
 import openfl.events.UncaughtErrorEvent;
