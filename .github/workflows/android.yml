@@ -16,6 +16,17 @@ jobs:
         with:
           haxe-version: 4.3.2
 
+      - name: Restore existing build cache for faster compilation
+        uses: actions/cache@v4.2.3
+        with:
+          key: cache-build-psych-android
+          path: |
+            .haxelib/
+            export/release/android/haxe/
+            export/release/android/obj/
+      - run: |
+          echo "HXCPP_COMPILE_CACHE=~/.hxcpp" >> $GITHUB_ENV
+
       - name: Install Libraries
         run: |
          haxelib install hmm --quiet
@@ -40,3 +51,31 @@ jobs:
           name: Psych Engine Android
           path: export/release/android/bin/app/build/outputs/apk
           if-no-files-found: error
+      - name: Clearing already existing cache
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const caches = await github.rest.actions.getActionsCacheList({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })
+            for (const cache of caches.data.actions_caches) {
+              if (cache.key == "cache-build-psych-android") {
+                console.log('Clearing ' + cache.key + '...')
+                await github.rest.actions.deleteActionsCacheById({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  cache_id: cache.id,
+                })
+                console.log("Cache cleared.")
+              }
+            }
+      - name: Uploading new cache
+        uses: actions/cache@v4.2.3
+        with:
+          # caching again since for some reason it doesnt work with the first post cache shit
+          key: cache-build-psych-android
+          path: |
+            .haxelib/
+            export/release/android/haxe/
+            export/release/android/obj/
