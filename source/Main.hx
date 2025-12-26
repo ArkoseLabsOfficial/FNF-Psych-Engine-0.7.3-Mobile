@@ -62,14 +62,8 @@ class Main extends Sprite
 		super();
 
 		#if mobile
-		//MobileUtil.getPermissions();
+		StorageSystem.getPermissions();
 		Sys.setCwd(StorageSystem.getStorageDirectory());
-
-		//if (!MobileUtil.areAssetsCopied("assets/"))
-			//MobileUtil.copyAssetsFromAPK("assets/");
-
-		//if (!MobileUtil.areAssetsCopied("assets/videos/"))
-	        //MobileUtil.copyAssetsFromAPK("assets/videos/");
 		#end
 
 		if (stage != null)
