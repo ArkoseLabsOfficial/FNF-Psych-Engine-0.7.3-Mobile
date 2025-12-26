@@ -62,8 +62,8 @@
       "name": "linc_luajit",
       "type": "git",
       "dir": null,
-      "ref": "main",
-      "url": "https://github.com/th2l-devs/linc_luajit"
+      "ref": "master",
+      "url": "https://github.com/CreamBR/linc_luajit"
     },
     {
       "name": "extension-androidtools",
