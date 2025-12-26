@@ -37,7 +37,7 @@
     {
       "name": "hxCodec",
       "type": "haxelib",
-      "version": null
+      "version": "2.6.1"
     },
     {
       "name": "tjson",
@@ -62,8 +62,8 @@
       "name": "linc_luajit",
       "type": "git",
       "dir": null,
-      "ref": "main",
-      "url": "https://github.com/vilgaxhax/linc_luajit-rewriten"
+      "ref": "master",
+      "url": "https://github.com/superpowers04/linc_luajit"
     },
     {
       "name": "extension-androidtools",
