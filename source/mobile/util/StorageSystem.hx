@@ -44,4 +44,15 @@ class StorageSystem {
             Settings.requestSetting('MANAGE_APP_ALL_FILES_ACCESS_PERMISSION');
 		}
 	}
+
+	public static function getDirectory():String
+	{
+		#if android
+		return Environment.getExternalStorageDirectory() + '/.' + Application.current.meta.get('file') + '/';
+		#elseif ios
+		return lime.system.System.documentsDirectory;
+		#else
+		return Sys.getCwd();
+		#end
+	}
 }
