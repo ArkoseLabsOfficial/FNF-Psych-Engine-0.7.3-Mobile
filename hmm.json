@@ -36,10 +36,8 @@
     },
     {
       "name": "hxCodec",
-      "type": "gif",
-      "dir": null,
-      "ref": "main",
-      "url": "https://github.com/polybiusproxy/hxCodec"
+      "type": "haxelib",
+      "version": null
     },
     {
       "name": "tjson",
