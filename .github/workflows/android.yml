@@ -28,10 +28,8 @@ jobs:
       - name: Install Libraries
         run: |
          haxelib install hmm --quiet
-         haxelib run hmm setup
-         haxelib run hmm install
-         haxelib remove hxCodec
-         haxelib git hxCodec https://github.com/polybiusproxy/hxCodec
+         haxelib run hmm setup --quiet
+         haxelib run hmm install --quiet
          haxelib run lime rebuild hxcpp
 
       - name: Configure Android
